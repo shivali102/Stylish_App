@@ -4,6 +4,7 @@ import React from 'react'
 import { Entypo, Ionicons } from 'react-native-vector-icons'
 
 import { responsiveFontSize as fs, responsiveHeight as h, responsiveScreenWidth as w } from 'react-native-responsive-dimensions'
+import { Colors } from '../Themes/Color'
 const PasswordInput = () => {
     return (
         <View style={styles.outerView}>
@@ -26,7 +27,7 @@ const PasswordInput = () => {
 export default PasswordInput
 const styles = StyleSheet.create({
     outerView: {
-        backgroundColor: '#F3F3F3',
+        backgroundColor:Colors.input_color,
         paddingVertical: h(2),
         borderWidth: .4,
         flexDirection: 'row',

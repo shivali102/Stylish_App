@@ -1,6 +1,7 @@
 import { View, Text, TextInput, StyleSheet } from 'react-native'
 import React from 'react'
 import { FontAwesome } from 'react-native-vector-icons'
+import { Colors } from '../Themes/Color'
 import { responsiveFontSize as fs, responsiveScreenHeight as h, responsiveScreenWidth as w } from 'react-native-responsive-dimensions'
 const UserInput = () => {
   return (
@@ -28,6 +29,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: w(3),
     borderWidth: .3,
     borderRadius:5,
+    backgroundColor:Colors.input_color,
   },
   icon: {
 

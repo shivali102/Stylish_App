@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { responsiveHeight as h, responsiveFontSize as fs, responsiveWidth as w } from 'react-native-responsive-dimensions'
-const Button = () => {
+const Button = (props) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity style={styles.button_touchable}>
       <View style={styles.buttonView}>
-        <Text style={styles.Button}>Button</Text>
+        <Text style={styles.Button}>{props.ButtonName}</Text>
         </View>
     </TouchableOpacity>
 
@@ -23,5 +23,8 @@ const styles = StyleSheet.create({
   Button: {
     textAlign: 'center',
     color: '#FFFFFF',
+  },
+  button_touchable:{
+    // activeOpacity:.1
   }
 })
