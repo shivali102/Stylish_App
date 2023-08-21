@@ -40,15 +40,27 @@ const SignIn = () => {
             <Text style={styles.sub_heading}>-OR Continue with-</Text>
             {/* <View style={styles.outer_view}> */}
                 <View style={styles.view_parent}>
+                        <TouchableOpacity>
                     <View style={styles.image_View}>
                         <Image style={styles.image_style} source={require('.././../assets/IconButton/google.png')} />
                     </View>
+                        </TouchableOpacity>
+                            <View style={{paddingHorizontal:w(3)}}>
+                        <TouchableOpacity>
                     <View style={styles.image_View}>
                         <Image style={styles.image_style} source={require("../../assets/IconButton/ios.png")} />
                     </View>
+
+                    
+                        </TouchableOpacity>
+                        </View>
+                    <TouchableOpacity>
+ 
                     <View style={styles.image_View}>
-                        <Image style={styles.image_style} source={require("../../assets/IconButton/Facebook.png")} />
+                   <Image style={styles.image_style} source={require("../../assets/IconButton/Facebook.png")} />
+                       
                     </View>
+                    </TouchableOpacity>
                 {/* </View> */}
                 </View>
                 {/* <View style={styles.login_detail_option}>    */}
@@ -126,9 +138,9 @@ const styles = StyleSheet.create({
     },
     view_parent: {
         flexDirection: 'row',
-        justifyContent: 'space-around',
-        marginHorizontal: w(22),
-
+        // justifyContent: 'space-between',
+        paddingHorizontal: w(22),
+        // backgroundColor:'red',
         marginTop: h(3),
         // backgroundColor:"red"
     },
@@ -143,7 +155,9 @@ const styles = StyleSheet.create({
         borderRadius: h(6),
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: Colors.icon_backgroud
+        backgroundColor: Colors.icon_backgroud,
+        // flex:1,,
+        
     },
     forget_password_text: {
         color: Colors.button

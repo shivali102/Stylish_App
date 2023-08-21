@@ -1,14 +1,12 @@
-import { View, Text, StyleSheet, Image,StatusBar, Platform } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import Header from '../Components/Header'
 import { responsiveFontSize as fs, responsiveHeight as h, responsiveScreenWidth as w } from 'react-native-responsive-dimensions'
-// import {  } from 'expo-status-bar'
+import { StatusBar } from 'expo-status-bar'
 const Onboarding1 = () => {
   return (
-    <View >
-      <View style={styles.status_Bar}>
-      <StatusBar  />
-      </View>
+    <View>
+      <StatusBar />
     <View style={styles.parent}>
       
       <Header/>
@@ -31,7 +29,7 @@ const Onboarding1 = () => {
 export default Onboarding1
 const styles = StyleSheet.create({
   parent: {
-    marginHorizontal: w(5)
+    marginHorizontal: w(4)
     
   },
   para: {
@@ -52,14 +50,5 @@ fontSize:fs(3),
   image:{
     height:h(45),
     width:h(45)
-  },
-  status_Bar:{
-    flex:1,
-    ...Platform.select({
-      android:{
-        marginTop:StatusBar.currentHeight,
-        backgroundColor:"black"
-      }
-    })
   }
 })
