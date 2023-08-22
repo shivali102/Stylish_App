@@ -6,6 +6,7 @@ import Onboarding1 from './src/screens/Onboarding1';
 import Onboarding2 from './src/screens/Onboarding2';
 import Onboarding3 from './src/screens/Onboarding3';
 import New from './src/screens/New';
+import Checkout from './src/screens/Checkout';
 // import States from './src/Components/states';
 import Props from './src/Components/Props'
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       {/* <Onboarding1/> */}
       {/* < Onboarding3/> */}
       <SignIn/>
+      {/* <Checkout/> */}
       {/* <New/> */}
       {/* <States/> */}
       {/* <Props/> */}

@@ -1,4 +1,4 @@
-import { View, Text, StatusBar, TextInput, StyleSheet, SafeAreaView, TouchableOpacity, Image } from 'react-native'
+import { View, Text, StatusBar, TextInput, StyleSheet, SafeAreaView, TouchableOpacity, Image, Platform } from 'react-native'
 import React from 'react'
 import { responsiveFontSize as fs, responsiveHeight as h, responsiveScreenWidth as w } from 'react-native-responsive-dimensions'
 import Button from '../Components/Button'
@@ -9,9 +9,11 @@ import { Colors } from '../Themes/Color'
 const SignIn = () => {
     return (
         <View style={styles.parent}>
-            <SafeAreaView />
+            {/* <SafeAreaView /> */}
+<View style={{}}>
             <StatusBar barStyle={'default'}
                 backgroundColor={'black'} />
+    </View>
             <View style={styles.outerview}>
                 <Text style={styles.heading1}>Welcome </Text>
              
@@ -108,7 +110,7 @@ export default SignIn
 const styles = StyleSheet.create({
     outerview: {
         // marginTop: contants.statusBarHeight,
-        marginTop:h(5),
+        // marginTop:h(5),
         marginBottom: h(3),
         // backgroundColor:'red',
         // flexWrap:'wrap',
@@ -124,12 +126,23 @@ const styles = StyleSheet.create({
         backgroundColor:"yellow"
     },
     parent: {
-        marginHorizontal: w(5)
+        // flex:1,
+        marginHorizontal: w(5),
+        ...Platform.select({
+            ios:{
+                marginTop:StatusBar.currentHeight
+            },
+            android:{
+                marginTop:StatusBar.currentHeight
+            
 
-    },
+            }
+        })
+
+        },
     forgottenPassword: {
         alignItems: 'flex-end',
-        paddingTop: h(1),
+        // paddingTop: h(1),
         paddingBottom: h(5),
     },
     sub_heading: {
