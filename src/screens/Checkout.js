@@ -15,7 +15,7 @@ const Checkout = () => {
                 <SimpleLineIcons style={{ paddingRight: w(1) }} name="location-pin" size={18} color={"black"} />
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
 
-                    <Text>Delivery Address</Text>
+                    <Text>Address</Text>
                 </View>
 
             </View>
