@@ -5,6 +5,7 @@ import { SimpleLineIcons } from 'react-native-vector-icons'
 import { responsiveHeight as h, responsiveWidth as w ,responsiveFontSize as fs} from "react-native-responsive-dimensions"
 import { AntDesign, Feather, Ionicons } from "react-native-vector-icons"
 import { Colors } from "../Themes/Color"
+import FlatlistItem from "../Components/FlatlistItem"
 // import { } from "react-native-vector-icons/Icon"
 const Checkout = () => {
     return (
@@ -124,6 +125,7 @@ const Checkout = () => {
                         <Text style={styles.price_Style}>$ 34.00</Text>
                     </View>
                 </View>
+                <FlatlistItem/>
             </View>
         </View>
     )
@@ -134,7 +136,7 @@ const styles = StyleSheet.create({
         // flex:1,
         ...Platform.select({
             android: {
-                marginTop: StatusBar.currentHeight
+                // marginTop: StatusBar.currentHeight
             },
 
         }),

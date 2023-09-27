@@ -15,6 +15,7 @@ import PlaceOrder from './src/screens/PlaceOrder';
 import FlatlistItem from './src/Components/FlatlistItem';
 import list from './src/Components/FlatlistPractice';
 import List from './src/Components/FlatlistPractice';
+import Shipping from './src/screens/Shipping';
 
 export default function App() {
   return (
@@ -28,7 +29,8 @@ export default function App() {
       {/* <Item/> */}
       {/* <App/> */}
       {/* <FlatlistItem/> */}
-      <List/>
+      {/* <List/> */}
+      <Shipping/>
     
     </View>
   );
