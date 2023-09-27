@@ -9,7 +9,7 @@ const DATA=[
     {
         id:"2",
         name:'rahul',
-        position:'web developer'
+        position:'developer'
     },
     {
         id:'3',
