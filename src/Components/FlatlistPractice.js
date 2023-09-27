@@ -8,7 +8,7 @@ const DATA=[
     },
     {
         id:"2",
-        name:'ashish',
+        name:'rahul',
         position:'web developer'
     },
     {
