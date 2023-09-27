@@ -11,14 +11,24 @@ import Checkout from './src/screens/Checkout';
 // import Flatlist from './src/screens/Flatlist';
 import Name,{Flatlist} from './src/screens/Flatlist'
 import Props from './src/Components/Props'
+import PlaceOrder from './src/screens/PlaceOrder';
+import FlatlistItem from './src/Components/FlatlistItem';
+import list from './src/Components/FlatlistPractice';
+import List from './src/Components/FlatlistPractice';
+
 export default function App() {
   return (
     <View>
-      <StatusBar style="auto" />
+   
     
       {/* <Flatlist/> */}
       {/* <Name/> */}
-      <Checkout/>
+      {/* <Checkout/> */}
+      {/* <PlaceOrder/> */}
+      {/* <Item/> */}
+      {/* <App/> */}
+      {/* <FlatlistItem/> */}
+      <List/>
     
     </View>
   );

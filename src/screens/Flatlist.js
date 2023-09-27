@@ -9,7 +9,7 @@ const Flatlist=()=>{
 const Name=()=>{
     return(
         <View>
-            <Text>hello</Text>
+        
         </View>
     )
 }

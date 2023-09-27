@@ -1,21 +1,25 @@
 import react from "react"
-import { View, Text, StyleSheet, Platform, StatusBar, TouchableOpacity, Image } from "react-native"
+import { View, Text, StyleSheet, Platform, StatusBar, TouchableOpacity, Image, FlatList } from "react-native"
 import CheckoutHeader from "../Components/CheckoutHeader"
 import { SimpleLineIcons } from 'react-native-vector-icons'
 import { responsiveHeight as h, responsiveWidth as w ,responsiveFontSize as fs} from "react-native-responsive-dimensions"
 import { AntDesign, Feather, Ionicons } from "react-native-vector-icons"
 import { Colors } from "../Themes/Color"
+import FlatlistItem from "../Components/FlatlistItem"
+import Block from "../Components/FlatlistItem"
+import App from "../Components/FlatlistItem"
+import AppItem from "../Components/FlatlistItem"
 // import { } from "react-native-vector-icons/Icon"
 const Checkout = () => {
     return (
         <View style={styles.parent}>
-            <CheckoutHeader />
+            {/* <CheckoutHeader />
             <View style={styles.sub_header}>
 
                 <SimpleLineIcons style={{ paddingRight: w(1) }} name="location-pin" size={18} color={"black"} />
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
 
-                    <Text>Address</Text>
+                    <Text>Delivey Address</Text>
                 </View>
 
             </View>
@@ -41,8 +45,8 @@ const Checkout = () => {
             </View>
             <Text style={{ paddingVertical: h(2),fontSize:fs(2) }}>
                 Shopping List
-            </Text>
-            <View style={styles.Outer_View1}>
+            </Text> */}
+            {/* <View style={styles.Outer_View1}>
                 <View style={{ flexDirection: 'row' }}>
                     <View style={{ paddingVertical: h(1) }}>
                         <Image style={{ height: h(19), width: h(20) }} source={require('./../../assets/CheckoutScreen/CardPic.png')} />
@@ -124,7 +128,11 @@ const Checkout = () => {
                         <Text style={styles.price_Style}>$ 34.00</Text>
                     </View>
                 </View>
-            </View>
+            </View> */}
+           <FlatlistItem/>
+           {/* <App/> */}
+          {/* <Block/>  */}
+
         </View>
     )
 }
