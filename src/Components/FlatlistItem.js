@@ -85,7 +85,7 @@ const Item=({heading,color1,color2,ratings,OriginalPrice,discountedPercentage,di
       <View style={styles.Outer_View1}>
                 <View style={{ flexDirection: 'row' }}>
                     <View style={{ paddingVertical: h(1) }}>
-                        <Image style={{ height: h(19), width: h(20) }} source={require('./../../assets/CheckoutScreen/CardPic.png')} />
+                        <Image style={{ height: h(19), width: h(20) }} source={require('./../Images/CheckoutScreen/CardPic.png')} />
                     </View>
 
                     <View style={{paddingLeft:w(2)}}>

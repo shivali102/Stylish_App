@@ -9,7 +9,7 @@ const Onboarding2 = () => {
                 <StatusBar />
                 <Header />
                 <View style={styles.outer_image_view}>
-                    <Image   resizeMode='center' style={styles.image} source={require('./../../assets/OnboardingScreens/Splash2.png')} />
+                    <Image   resizeMode='center' style={styles.image} source={require('../Images/OnboardingScreens/SplashScreen2.png')} />
                 </View>
                 <View>
                     <Text style={styles.heading}> Make Payment</Text>

@@ -46,7 +46,7 @@ const Checkout = () => {
             <View style={styles.Outer_View1}>
                 <View style={{ flexDirection: 'row' }}>
                     <View style={{ paddingVertical: h(1) }}>
-                        <Image style={{ height: h(19), width: h(20) }} source={require('./../../assets/CheckoutScreen/CardPic.png')} />
+                        {/* <Image /> */}
                     </View>
 
                     <View style={{paddingLeft:w(2)}}>

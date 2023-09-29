@@ -9,7 +9,7 @@ const Onboarding3 = () => {
             <StatusBar />
             <Header />
             <View style={styles.image_View}>
-                <Image style={styles.image} source={require('../../assets/OnboardingScreens/SplashScreen3.png')} />
+                <Image style={styles.image} source={require('../Images/OnboardingScreens/SplashScreen3.png')} />
             </View>
             <View style={styles.header_View}>
                 <Text style={styles.heading}>Get Your Order</Text>

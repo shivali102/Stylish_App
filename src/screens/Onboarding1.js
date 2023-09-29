@@ -11,7 +11,7 @@ const Onboarding1 = () => {
       
       <Header/>
       <View style={styles.outer_View_Image}>
-      <Image style={styles.image}source={require('../../assets/OnboardingScreens/SplahScreen1.png')}/>
+      <Image style={styles.image}source={require('../Images/OnboardingScreens/SplashScreen1.png')}/>
       </View>
       <View style={{alignItems:'center',justifyContent:'center'}}>
         <Text style={styles.heading}>Choose Product</Text>
