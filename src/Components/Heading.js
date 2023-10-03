@@ -17,8 +17,8 @@ const styles=StyleSheet.create({
      
     heading: {
       
-        marginVertical:h(4),
-        backgroundColor:'red'
+        marginVertical:h(1),
+        // backgroundColor:'red'
     },
     headingText:{
         fontSize:fs(5)

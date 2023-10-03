@@ -6,5 +6,6 @@ textinput_icon_color:"#626262",
 textcolor:"'#F83758'",
 Screen_color:'#F5F5F5',
 borderColor:"#BBBBBB",
+TextInput_Border:"#C8C8C8"
 
 }

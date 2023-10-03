@@ -10,11 +10,12 @@ export default function Signup() {
 
         <View style={styles.parent}>
             <SafeAreaView />
-            <StatusBar backgroundColor='red' BarStyle='default' hidden={false} />
+            <StatusBar BarStyle='default' hidden={false} />
           
-             <Heading heading1='Welcome'/>
-            <Heading heading2='Back'/> 
+             <Heading heading1='Welcome'
+             heading2='Back!'/> 
 
+            <UserInput />
             <UserInput />
             <View style={styles.description}>
             <Text>By clicking the Register button, you agree</Text> 

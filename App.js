@@ -9,8 +9,8 @@ export default function App() {
    
     
     {/* <ShippingScreen/>      */}
-      {/* <Signup/> */}
-      <Profile/>
+      <Signup/>
+      {/* <Profile/> */}
     
     </View>
   );

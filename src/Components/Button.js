@@ -3,7 +3,8 @@ import React from 'react'
 import { responsiveHeight as h, responsiveFontSize as fs, responsiveWidth as w } from 'react-native-responsive-dimensions'
 const Button = (props) => {
   return (
-    <TouchableOpacity style={styles.button_touchable}>
+    <TouchableOpacity style={styles.button_touchable} 
+    onPress={props.onPressing }>
       <View style={styles.buttonView}>
         <Text style={styles.Button}>{props.ButtonName}</Text>
         </View>
