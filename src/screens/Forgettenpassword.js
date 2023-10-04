@@ -22,7 +22,7 @@ const Forgettenpassword = () => {
           placeholder_name={'Enter your  Email Address'} />
       </View>
       <View style={{flex:1}}>
-        <Text>* We will send you a message to set or reset your new password</Text>
+        <Text>*We will send you a message to set or reset your new password</Text>
       </View>
       <View style={{flex:7.3}}>
       <Button ButtonName={'Submit'}/>
