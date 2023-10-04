@@ -4,7 +4,7 @@ import TextBox from "./TextInput"
 import {Entypo,Ionicons} from "react-native-vector-icons"
 import { responsiveWidth as w,responsiveHeight as h } from "react-native-responsive-dimensions"
 import { Colors } from "../Themes/Color"
-const PasswordInput=()=>{
+const PasswordInput=(props)=>{
     return (
         <View  style={[styles.parent ]}>
         <View style={{flex:.3,justifyContent:'center',alignItems:'center'}}>
@@ -12,7 +12,7 @@ const PasswordInput=()=>{
         </View>
         
         <View style={{flex:2.4}}>
-        <TextInput placeholder={"Password"} />
+        <TextInput placeholder={props.placeholdername} />
     </View>
         <View style={{flex:.3,justifyContent:'center',alignItems:'center'}}>
          <Ionicons name="eye-outline" size={22} color={Colors.textinput_icon_color}/>

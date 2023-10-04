@@ -5,12 +5,13 @@ import Button from '../Components/Button'
 import UserInput from '../Components/UserInput'
 import contants from 'expo-constants'
 import PasswordInput from '../Components/PasswordInput'
+import Icon from '../Components/Icon'
 import { Colors } from '../Themes/Color'
 const SignIn = () => {
     return (
         <View style={styles.parent}>
-            {/* <SafeAreaView /> */}
-<View style={{}}>
+          
+<View>
             <StatusBar barStyle={'default'}
                 backgroundColor={'black'} />
     </View>
@@ -21,21 +22,30 @@ const SignIn = () => {
                      <Text style={styles.heading1}>Back!</Text>
                      </View>
 
-            <View>
-                <UserInput />
-            </View>
-            <View style={{ marginTop: h(4) }}>
-                <PasswordInput />
-            </View>
+        {/* <Icon 
+        icon_name='user'
+        icon_size={18}
+        icon_color={'black'}
+        placeholder_name={'Email'}/> */}
+
+       <UserInput
+            icon_name={'user'}
+            icon_size={16}
+            icon_color={Colors.textinput_icon_color}
+            placeholder_name={'Email'} />
+            <View style={{marginTop:h(3)}}>
+       <PasswordInput
+       placeholdername={'Password'}/>
+       </View>
             <TouchableOpacity>
                 <View style={styles.forgottenPassword}>
                     <Text style={styles.forget_password_text}> Forget password?</Text>
                 </View>
             </TouchableOpacity>
 
-            <View>
+            
                 <Button ButtonName={'Login'} />
-            </View>
+            
 
 
 

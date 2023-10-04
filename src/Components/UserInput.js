@@ -3,24 +3,20 @@ import React from 'react'
 import { FontAwesome  } from 'react-native-vector-icons'
 import { Colors } from '../Themes/Color'
 import { responsiveFontSize as fs, responsiveScreenHeight as h, responsiveScreenWidth as w } from 'react-native-responsive-dimensions'
-const UserInput = () => {
+const UserInput = (props) => {
   return (
     <View style={styles.main_view}>
       {/* <FontAwesome6 name='user-large' size={20} color='#626262' /> */}
       <View style={styles.icon_View}>
-        <FontAwesome styles={styles.icon} name='user' size={21} color='#626262' />
+        <FontAwesome styles={styles.icon} name={props.icon_name} size={props.icon_size} color={props.icon_color} />
       </View>
       <View style={styles.textInput_View}>  
-      <TextInput  placeholder='Username or Email' />
+      <TextInput  placeholder={props.placeholder_name} />
       </View>
-      <View style={styles.empty_view}>
-
-      </View>
+    
     </View>
 
-    // <View>
-    //   <Text>hii</Text>
-    // </View>
+  
 
   )
 }
@@ -41,19 +37,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     flex:.1,
-    // backgroundColor:"red",
+ 
 
   },
   textInput_View:{
-    // alignItems:'center',
-    // justifyContent:'center',
+  
   flex:.9,
-  // backgroundColor:'yellow'
+  
   },
-  empty_view:{
-    // flex:0.1,
-    // backgroundColor:'blue',
-  }
+  
 })
 
 export default UserInput
