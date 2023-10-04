@@ -17,7 +17,8 @@ const styles=StyleSheet.create({
      
     heading: {
       
-        marginVertical:h(1),
+        paddingTop:h(1),
+        paddingBottom:h(3.2),
         // backgroundColor:'red'
     },
     headingText:{

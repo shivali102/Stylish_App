@@ -6,6 +6,7 @@ import Signin from './src/screens/SignIn'
 import Profile from './src/screens/Profile';
 import SignIn from './src/screens/SignIn';
 import Forgettenpassword from './src/screens/Forgettenpassword';
+import Fruit from './src/Components/Flatlist2';
 export default function App() {
   return (
     <View>
@@ -15,7 +16,8 @@ export default function App() {
       {/* <Signup/> */}
       {/* <SignIn/> */}
       {/* <Profile/> */}
-    <Forgettenpassword/>
+    {/* <Forgettenpassword/> */}
+    <Fruit/>
     </View>
   );
 }

@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, TextInput, StatusBar } from 'react-native'
 import { responsiveWidth as w, responsiveHeight as h, responsiveFontSize as f } from 'react-native-responsive-dimensions'
 import { Colors } from '../Themes/Color'
 import { FontAwesome } from 'react-native-vector-icons'
-import Icon from '../Components/Icon'
 import UserInput from '../Components/UserInput'
 import Button from '../Components/Button'
 const Forgettenpassword = () => {
@@ -11,20 +10,20 @@ const Forgettenpassword = () => {
 
     <View style={styles.parent}>
       <StatusBar />
-      <View style={{ flex:2.4,justifyContent:'center'}}>
+      <View style={{ paddingTop:h(4),justifyContent:'center'}}>
         <Text style={styles.heading1}>Forget</Text>
         <Text style={styles.heading1}>Password?</Text>
       </View>
-      <View style={{ flex:1.3}}>
+      <View style={{ paddingTop:h(3),paddingBottom:h(3)}}>
         <UserInput
           icon_name={'envelope'}
           icon_size={18}
           placeholder_name={'Enter your  Email Address'} />
       </View>
-      <View style={{flex:1}}>
+      <View style={{paddingBottom:h(5)}}>
         <Text>*We will send you a message to set or reset your new password</Text>
       </View>
-      <View style={{flex:7.3}}>
+      <View style={{height:"100%"}}>
       <Button ButtonName={'Submit'}/>
       </View>
     </View>
@@ -38,7 +37,7 @@ const styles = StyleSheet.create({
   parent: {
     paddingHorizontal: w(4),
     // flex:1,
-    height:"100%",
+    // height:"100%",
     backgroundColor: Colors.Screen_color,
   
   },

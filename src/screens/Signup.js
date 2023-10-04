@@ -64,7 +64,7 @@ export default function Signup() {
                     </TouchableOpacity>
                 {/* </View> */}
                 </View>
-                <View style={{alignItems:'center',paddingTop:h(2)}}>
+                <View style={{alignItems:'center',paddingTop:h(2),height:'100%'}}>
                 <View style={{flexDirection:'row'}}>
                 <Text>I Already have an account </Text>
                 <TouchableOpacity>
@@ -77,22 +77,25 @@ export default function Signup() {
 }
 const styles = StyleSheet.create({
     parent: {
-        paddingHorizontal: w(2),
+        paddingHorizontal: w(4),
+        backgroundColor:Colors.Screen_color
     },
     description:{
-        paddingTop:h(2)
+        paddingTop:h(2),
+        paddingBottom:h(3),
     },
     short_heading:{
         textAlign:'center',
-        paddingVertical:h(2),
+        paddingBottom:h(2),
+        paddingTop:h(3)
     },
     view_parent: {
         flexDirection: 'row',
-        // justifyContent: 'space-between',
+       
         paddingHorizontal: w(22),
-        // backgroundColor:'red',
-        marginTop: h(3),
-        // backgroundColor:"red"
+       
+        
+       
     },
     image_View: {
         borderColor: Colors.button,
@@ -102,7 +105,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: Colors.icon_backgroud,
-        // flex:1,,
+    
         
     },
     image_style: {
@@ -114,7 +117,7 @@ const styles = StyleSheet.create({
         color:Colors.button
     },
     userinput_view:{
-        marginTop:h(3.5)
+        marginTop:h(2)
     }
 
 })

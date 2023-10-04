@@ -5,7 +5,6 @@ import Button from '../Components/Button'
 import UserInput from '../Components/UserInput'
 import contants from 'expo-constants'
 import PasswordInput from '../Components/PasswordInput'
-import Icon from '../Components/Icon'
 import { Colors } from '../Themes/Color'
 const SignIn = () => {
     return (
@@ -22,11 +21,7 @@ const SignIn = () => {
                      <Text style={styles.heading1}>Back!</Text>
                      </View>
 
-        {/* <Icon 
-        icon_name='user'
-        icon_size={18}
-        icon_color={'black'}
-        placeholder_name={'Email'}/> */}
+      
 
        <UserInput
             icon_name={'user'}
@@ -77,7 +72,7 @@ const SignIn = () => {
                 </View>
                 {/* <View style={styles.login_detail_option}>    */}
                 <View style={styles.outer_view}>
-            <View>
+            <View >
             <Text>Create an account </Text>
 
                </View>
@@ -137,17 +132,18 @@ const styles = StyleSheet.create({
     },
     parent: {
         // flex:1,
-        marginHorizontal: w(5),
+        paddingHorizontal:w(4),
         ...Platform.select({
             ios:{
-                marginTop:StatusBar.currentHeight
+                paddingTop:StatusBar.currentHeight
             },
             android:{
-                marginTop:StatusBar.currentHeight
+                paddingTop:StatusBar.currentHeight
             
 
             }
-        })
+        }),
+        backgroundColor:Colors.Screen_color
 
         },
     forgottenPassword: {
@@ -201,20 +197,19 @@ const styles = StyleSheet.create({
     },
     register_text: {
         textDecorationLine: 'underline',
-        //  position: 'relative', 
-        //  top: 3
-        // backgroundColor:'yellow',
-        // position:'absolute',
-        // top :5
+       
         fontSize:fs(2),
         color:Colors.button,
         
     },
     outer_view:{
      flexDirection:'row',
-     alignItems:'center',
      justifyContent:'center',
-     paddingTop:h(2.5)
+     paddingTop:h(2),
+   
+     height:'100%',
+    //  backgroundColor:'red'
+     
     }
 
 
